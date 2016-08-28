@@ -36,7 +36,6 @@ public class Base extends ActionBarActivity {
 
             public void onClick(View arg0) {
 
-
                 startActivity(intent);
             }
         });
@@ -76,9 +75,12 @@ public class Base extends ActionBarActivity {
         db.open();
         return db.BorrarDatos();
     }
+
+    //Método que carga todas las preguntas de la base de datos
     public ArrayList<Pregunta> ObtenerDatos() {
         //--cargamos todos los datos---
         ArrayList<Pregunta> listapreguntas=new ArrayList<>();
+
         db.open();
         Cursor c = db.CargarTodosLosDatos();
         if (c.moveToFirst())

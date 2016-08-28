@@ -63,26 +63,22 @@ public class ActividadLogin extends Base
                     vg.setSessionpass(Mi_textview2.getText().toString());
                     vg.setSessionemail(Mi_textview.getText().toString());
                 }
-                    if (ObtenerUsuario(Mi_textview.getText().toString(),Mi_textview2.getText().toString())) {
+                  //  if (ObtenerUsuario(Mi_textview.getText().toString(),Mi_textview2.getText().toString())) {
+                     //   vg.setSessionpass(Mi_textview2.getText().toString());
+                      //  vg.setSessionemail(Mi_textview.getText().toString());
 
-                    if (valido) {
-                        vg.setSessionpass(Mi_textview2.getText().toString());
-                        vg.setSessionemail(Mi_textview.getText().toString());
-
-                        Intent intento = new Intent(getApplicationContext(), ActividadPreguntas.class);
+                        Intent intento = new Intent(getApplicationContext(), Actividad_Elegir_test.class);
                         startActivity(intento);
-                    } else
-                        Mensaje("Debe elegir una Materia.");
-                }else{
-                    Mensaje("No se ha encontrado el usuario!");
-                }
+                //}else{
+                 //   Mensaje("No se ha encontrado el usuario!");
+               // }
             }
         });
 
         ImageView imgv = (ImageView) findViewById(R.id.imageViewbachi);
         Intent intento = new Intent(getApplicationContext(), Main.class);
         onclickImagenCambiarVista(imgv, intento);
-        CargarSpinner();
+        //CargarSpinner();
     }
 
     @Override
@@ -156,7 +152,7 @@ public class ActividadLogin extends Base
     }
     public void Mensaje(String msg){
         Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_SHORT).show();};
-    private void CargarSpinner() {
+  /*  private void CargarSpinner() {
         Spinner s1;
         final String[] presidents = {
                 "Elija la materia",
@@ -192,5 +188,5 @@ public class ActividadLogin extends Base
 
 
     }
-
+*/
 }

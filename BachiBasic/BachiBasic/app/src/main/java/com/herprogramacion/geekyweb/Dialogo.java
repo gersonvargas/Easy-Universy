@@ -8,18 +8,14 @@ import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 
 public class Dialogo extends DialogFragment {
-    /*
-    * FragmentManager fragmentManager = getSupportFragmentManager();
-                Dialogo dialogo = new Dialogo();
-                dialogo.show(fragmentManager, "tagAlerta");
-    * */
+
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
 
         AlertDialog.Builder builder =
                 new AlertDialog.Builder(getActivity());
 
-        builder.setMessage("Esto es un mensaje de alerta.")
+        builder.setMessage("Alerta.")
                 .setTitle("Información")
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {

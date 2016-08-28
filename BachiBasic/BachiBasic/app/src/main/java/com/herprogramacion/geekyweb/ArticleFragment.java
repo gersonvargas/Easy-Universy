@@ -1,5 +1,6 @@
 package com.herprogramacion.geekyweb;
 
+import android.graphics.Color;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -24,7 +25,9 @@ public class ArticleFragment extends Fragment {
 
         getActivity().setTitle(article);
         TextView headline = (TextView) rootView.findViewById(R.id.headline);
-        headline.append(" " + article);
+        headline.setBackgroundColor(Color.TRANSPARENT);
+        headline.setTextColor(Color.BLUE);
+      //  headline.append("\n" + article.toLowerCase());
 
         return rootView;
     }

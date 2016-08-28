@@ -69,6 +69,7 @@ public class Main extends Base {
         items.add(new DrawerItem(tagTitles[2], R.drawable.login));
         items.add(new DrawerItem(tagTitles[3], R.drawable.registrar));
         items.add(new DrawerItem(tagTitles[4], R.drawable.usuario));
+        items.add(new DrawerItem(tagTitles[5], R.drawable.gracias));
 
         // Relacionar el adaptador y la escucha de la lista del drawer
         drawerList.setAdapter(new DrawerListAdapter(this, items));
@@ -195,6 +196,10 @@ public void elegirVista(int position){
         }else{
             Mensaje("No ha iniciado sesión.");
         }
+    }
+    if(position==5) {
+        Intent intento = new Intent(getApplicationContext(), Actividad_Elegir_test.class);
+        startActivity(intento);
     }
 }
     /* Método auxiliar para setear el titulo de la action bar */

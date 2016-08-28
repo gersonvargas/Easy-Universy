@@ -39,7 +39,10 @@
             android:label="@string/title_activity_actividad_tutorial2" />
         <activity
             android:name=".ActividadResultado"
-            android:label="@string/title_activity_actividad_resultado"></activity>
+            android:label="@string/title_activity_actividad_resultado" />
+        <activity
+            android:name=".Actividad_Elegir_test"
+            android:label="@string/title_activity_actividad__elegir_test"></activity>
     </application>
 
 </manifest>
