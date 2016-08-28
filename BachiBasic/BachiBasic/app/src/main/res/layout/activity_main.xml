@@ -1,0 +1,52 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView4"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp">
+
+
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="350dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="A pesar del gran número de agentes que la CIA tiene en la India, no pudo descubrir que estaban desarrollando la bomba atómica hasta que hicieron la primera explosión de prueba? "
+            android:id="@+id/textView3"
+            android:backgroundTint="#2ac0b3"
+            android:foreground="#59d2df"
+            android:shadowColor="#74b7b3"
+            android:textColor="#45c52c"
+            android:layout_marginTop="73dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        </ScrollView>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#111"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" />
+
+
+
+
+</android.support.v4.widget.DrawerLayout>

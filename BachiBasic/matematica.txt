@@ -1,0 +1,131 @@
+Si la medida de la diagonal de un rectángulo es 17 y la medida del largo excede en 7 a la medida del ancho, entonces, ¿cuál es el perímetro de dicho rectángulo?
+A) 40
+B) 46
+C) 50
+D) 57
+2
+El producto de dos números enteros positivos es 375 y el número mayor equivale a cinco tercios del número menor. ¿Cuál es la suma de esos números?
+A) 38
+B) 40
+C) 47
+D) 75
+2
+La medida del largo de un rectángulo excede en 4 a la medida del ancho. Si tanto la medida del ancho como la del largo se aumentan en 4, se obtiene otro rectángulo, tal que, su área es el doble que el área del rectángulo original. ¿Cuál es el área del rectángulo original?
+A) 32
+B) 64
+C) 96
+D) 128
+3
+El cuadrado de la edad de Ana hace 6 años equivale a la edad que tendrá dentro de 6 años. Respecto a la edad actual de Ana, ¿cuál sería su edad en 20 años?
+A) 23
+B) 30
+C) 32
+D) 62
+2
+Sea f una función cuadrática, tal que, ( 5 , 0 ) pertenece al gráfico de f. Si el vértice de f es ( 3 , – 4 ), entonces, el otro punto de intersección de f con el eje de las abscisas, es
+A) ( 0 , 0 )
+B) ( 1 , 0 )
+C) ( 3 , 0 )
+D) ( – 4 , 0 )
+2
+Considere el siguiente enunciado: En una empresa, el costo "C" por producir "x" unidades de un producto (0 < x < 1000) está dado por C(x) = – 3x2 + 3000x. De acuerdo con el enunciado anterior, considere las siguientes proposiciones: I. El costo máximo es superior a 700 000. II. El costo aumenta cuando se produce más de 500 unidades. ¿Cuál o cuáles de ellas son verdaderas?
+A) Ambas
+B) Ninguna
+C) Solo la I
+D) Solo la II
+3
+Sea la función f, tal que, f: [ 0 , 10 ] ?R, con f(x) = 2x2 – 20x. ¿Cuál es el ámbito de f?
+A) { 0 }
+B) [ 0 , 10 ]
+C) [ – 50 , 0 ]
+D) [ – 50, +8 [
+3
+Una tienda de suministros escolares cobra ?15 por cada copia y vende más de 1500 copias diarias. Con base en la situación anterior, considere las siguientes proposiciones: I. El precio por copia representa una cantidad constante. II. El número de copias, que la tienda vende diariamente, es una cantidad variable. ¿Cuál o cuáles de ellas son verdaderas?
+A) Ambas
+B) Ninguna
+C) Solo la I
+D) Solo la II
+1
+El salario base por quincena de un vendedor de automóviles es 400 000 colones, y por cada vehículo que venda recibe una bonificación salarial de 50 000 colones. De acuerdo con el enunciado anterior, considere las siguientes proposiciones: I. La cantidad de vehículos vendidos depende del salario total por quincena que recibe el vendedor. II. Un criterio que modela el salario quincenal del vendedor es f(x) = 50 000x + 400 000, donde “x” representa la cantidad de automóviles vendidos quincenalmente. ¿Cuál o cuáles de ellas son verdaderas?
+A) Ambas
+B) Ninguna
+C) Solo la I
+D) Solo la II
+4
+Si f es una función, tal que, f: N ? B, con f(x) = x – 4; entonces, “B” puede ser
+A) [ 0 , +8[
+B) [ 4 , +8 [
+C) ] –8 , – 4[
+D) [ – 5 , +8 [
+4
+Sea f una función cuadrática dada por f(x) = ax2 – 4x – 5. Si X = 1 es el eje de simetría de la gráfica de f, entonces, la imagen de – 2 en f es
+A) 7
+B) 11 
+C) – 5 
+D) – 8
+2
+Considere el siguiente enunciado: Sea f una función biyectiva dada por f(x) = x2 + 2, tal que, el dominio de f es [ 0 , +8 [. De acuerdo con el enunciado anterior, considere las siguientes proposiciones: I. El dominio de la inversa de f es ] – 8 , 2 [. II. El codominio de la inversa de f es [ 0 , +8 [.  ¿Cuál o cuáles de ellas son verdaderas?
+A) Ambas 
+B) Ninguna 
+C) Solo la I 
+D) Solo la II
+4
+Considere las siguientes proposiciones referentes a la función lineal f dada por: f(x) = mx + 1 , tal que , m > 0 :  I.	f es creciente. II.	 interseca el eje de las ordenadas en ( 0 , 1 ). ¿Cuál o cuáles de ellas son verdaderas? 
+A) Ambas 
+B) Ninguna 
+C) Solo la I 
+D) Solo la II
+1
+Sean l1 y l2 dos rectas paralelas entre sí. Si l1 está dada por y = – 4x + 1 y (1, 3) pertenece al gráfico de l2, entonces, l2 interseca el eje de las ordenadas en 
+A) ( 7 , 0 ) 
+B) ( 0 , 7 )
+ C) ( 13 , 0 ) 
+D) ( 0 , 13 )
+2
+El costo total de producción de cierto artículo está constituido de la siguiente forma: ? 2 500 000 en costos fijos (independientemente de la cantidad producida) y de ? 5000 por cada unidad producida de dicho artículo. Si se invierten ? 2 750 000 para cubrir los costos totales de producción, entonces, ¿cuántas unidades producen? 
+A) 50
+B) 500 
+C) 550 
+D) 1050
+1
+Una compañía telefónica cobra cierta cantidad de dólares a sus clientes por una llamada de un minuto o menos, y otro monto por cada minuto adicional. Si un cliente realiza desde su celular dos llamadas a un mismo teléfono; una de 36 minutos que cuesta $ 8 y otra de 11 minutos que cuesta $ 3, entonces, ¿cuál es el costo (en dólares) del minuto adicional?
+ A) 0,20 
+B) 0,22 
+C) 0,27 
+D) 0,80
+1
+La distancia entre los centros de dos circunferencias coplanares es mayor que 8 y menor que 20. Si la medida del radio de cada una de ellas es 14 y 6, entonces, se cumple que las circunferencias son 
+A) secantes. 
+B) concéntricas. 
+C) tangentes interiormente. 
+D) tangentes exteriormente
+1
+Sea un cuadrado circunscrito en una circunferencia de radio 5 cm. ¿Cuál es el área, en centímetros cuadrados, de ese cuadrado? 
+A) 25 
+B) 50 
+C) 100 
+D) 200
+3
+Sea un polígono regular cuyo lado mide 8 cm. Si se puede trazar un total de 35 diagonales, entonces, ¿cuál es el área, en centímetros cuadrados, de ese polígono? 
+A) 280,00 
+B) 246,23 
+C) 393,97 
+D) 492,46
+4
+Si un balón de playa tiene un diámetro de 110 cm, entonces, ¿cuánto mide, en centímetros cuadrados, la superficie de ese balón? 
+A) 220p
+B) 3 025p 
+C) 12 100p 
+D) 48 400p
+3
+Cuál es el área lateral, en centímetros cuadrados, de una pirámide recta, cuya altura mide 12 cm y la base es un cuadrado de 10cm de lado? 
+A) 100 
+B) 240 
+C) 260 
+D) 285
+3
+En un cono circular recto, la medida del diámetro de la base es tres medios de la longitud de la altura del cono. Si su altura mide 12 cm, entonces, ¿cuál es el área total, en centímetros cuadrados, de ese cono? A) 216p 
+B) 324p 
+C) 594p 
+D) 1296p
+1

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Bachi-Basic</string>
+
+    <string-array name="Tags">
+        <item>BACHI-BASIC</item>
+        <item>Tutoriales</item>
+        <item>Iniciar cuestionario</item>
+        <item>Registrarse</item>
+        <item>Perfil</item>
+    </string-array>
+
+    <string name="drawer_open">Abrir navigation drawer</string>
+    <string name="drawer_close">Cerrar navigation drawer</string>
+    <string name="headlines">Sabias que?</string>
+    <string name="title_activity_actividad_login">Login</string>
+    <string name="title_activity_actividad_preguntas">Cuestionario</string>
+    <string name="title_activity_actividad_registrar">Registrarse</string>
+    <string name="title_activity_actividad_tutorial">Tutorial</string>
+    <string name="title_activity_actividad_usuario">Perfil</string>
+    <string name="title_activity_actividad_login2">Login</string>
+    <string name="title_section1">Inicio</string>
+    <string name="title_section2">Tutorial</string>
+    <string name="title_section3">Ayuda</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Ejemplo</string>
+    <string name="action_settings">configuraciones</string>
+    <string name="title_activity_actividad_tutorial2">Tutorial</string>
+    <string name="title_activity_actividad_resultado">Resultado del test</string>
+</resources>

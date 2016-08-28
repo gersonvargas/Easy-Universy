@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.herprogramacion.geekyweb">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Main"
+            android:label="@string/app_name"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActividadPreguntas"
+            android:label="@string/title_activity_actividad_preguntas" />
+        <activity
+            android:name=".ActividadRegistrar"
+            android:label="@string/title_activity_actividad_registrar" />
+        <activity
+            android:name=".ActividadUsuario"
+            android:label="@string/title_activity_actividad_usuario" />
+        <activity
+            android:name=".ActividadLogin"
+            android:label="@string/title_activity_actividad_login2" />
+        <activity
+            android:name=".ActividadTutorial"
+            android:label="@string/title_activity_actividad_tutorial2" />
+        <activity
+            android:name=".ActividadResultado"
+            android:label="@string/title_activity_actividad_resultado"></activity>
+    </application>
+
+</manifest>
