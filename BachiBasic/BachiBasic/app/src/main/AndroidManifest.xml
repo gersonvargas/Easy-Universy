@@ -42,7 +42,24 @@
             android:label="@string/title_activity_actividad_resultado" />
         <activity
             android:name=".Actividad_Elegir_test"
-            android:label="@string/title_activity_actividad__elegir_test"></activity>
+            android:label="@string/title_activity_actividad__elegir_test" />
+        <activity
+            android:name=".Actividadhojarespuestas"
+            android:label="@string/title_activity_actividadhojarespuestas" />
+        <activity
+            android:name=".InsertActivity"
+            android:label="@string/title_activity_insert"
+            android:parentActivityName=".Main">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="Main" />
+        </activity>
+        <activity
+            android:name=".actividadRespuestas"
+            android:label="@string/title_activity_actividad_respuestas" />
+        <activity
+            android:name=".ActividadEjemplos"
+            android:label="@string/title_activity_actividad_ejemplos"></activity>
     </application>
 
 </manifest>

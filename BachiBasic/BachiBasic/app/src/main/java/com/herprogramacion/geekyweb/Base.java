@@ -102,18 +102,7 @@ public class Base extends ActionBarActivity {
             Mensaje("No se encontró el dato");
         db.close();
     }
-    public String[] ObtenerUsuariovalores(String email) {
-        //---cargar un contacto ---
-        String[]valores=null;
-        db.open();
-        Cursor c = db.ObtenerUsuario(email);
-        if (c.moveToFirst())
-           valores= MostarDato2(c);
-        else
-            Mensaje("No se encontró el dato");
-        db.close();
-        return valores;
-    }
+
     public boolean ObtenerUsuario(String email,String pass) {
         //---cargar un contacto ---
         boolean bandera=false;

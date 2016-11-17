@@ -5,10 +5,12 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.media.Image;
+import android.os.AsyncTask;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,17 +23,33 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.herprogramacion.geekyweb.tools.Constantes;
+import com.herprogramacion.geekyweb.web.VolleySingleton;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
 public class ActividadLogin extends Base
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
-
-    /**
-     * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
-     */
     private NavigationDrawerFragment mNavigationDrawerFragment;
 
-    /**
-     * Used to store the last screen title. For use in {@link #restoreActionBar()}.
-     */
     private CharSequence mTitle;
     private boolean valido=false;
     @Override
@@ -66,9 +84,9 @@ public class ActividadLogin extends Base
                   //  if (ObtenerUsuario(Mi_textview.getText().toString(),Mi_textview2.getText().toString())) {
                      //   vg.setSessionpass(Mi_textview2.getText().toString());
                       //  vg.setSessionemail(Mi_textview.getText().toString());
-
-                        Intent intento = new Intent(getApplicationContext(), Actividad_Elegir_test.class);
-                        startActivity(intento);
+                    new ObtenerWebService().execute(Mi_textview.getText().toString(),Mi_textview2.getText().toString());
+                       // Intent intento = new Intent(getApplicationContext(), Actividad_Elegir_test.class);
+                       // startActivity(intento);
                 //}else{
                  //   Mensaje("No se ha encontrado el usuario!");
                // }
@@ -115,19 +133,10 @@ public class ActividadLogin extends Base
      * A placeholder fragment containing a simple view.
      */
     public static class PlaceholderFragment extends Fragment {
-        /**
-         * The fragment argument representing the section number for this
-         * fragment.
-         */
         private static final String ARG_SECTION_NUMBER = "section_number";
 
         public PlaceholderFragment() {
         }
-
-        /**
-         * Returns a new instance of this fragment for the given section
-         * number.
-         */
         public static PlaceholderFragment newInstance(int sectionNumber) {
             PlaceholderFragment fragment = new PlaceholderFragment();
             Bundle args = new Bundle();
@@ -135,7 +144,6 @@ public class ActividadLogin extends Base
             fragment.setArguments(args);
             return fragment;
         }
-
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
@@ -151,42 +159,73 @@ public class ActividadLogin extends Base
         }
     }
     public void Mensaje(String msg){
-        Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_SHORT).show();};
-  /*  private void CargarSpinner() {
-        Spinner s1;
-        final String[] presidents = {
-                "Elija la materia",
-                "Biología",
-                "Matemáticas",
-                "Español",
-                "Inglés",
-                "Cívica",
-                "Est. Sociales"
-        };
-        //---Spinner View---
-        s1 = (Spinner) findViewById(R.id.spinnermateria);
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-                this, android.R.layout.simple_spinner_item, presidents);
-
-        s1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view,
-                                       int position, long id) {
-                if (position != 0) {
-                    VariablesGlobales.getInstance().setTipoTest(position);
-                    valido = true;
-                }
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-            }
-        });
-
-        s1.setAdapter(adapter);
-
-
+        Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_SHORT).show();
     }
-*/
+    public class ObtenerWebService extends AsyncTask<String, Integer, String> {
+        @Override
+        protected String doInBackground(String... params) {
+            String devuelve = "";
+            URL url = null; // Url de donde queremos obtener información
+            try {
+                url = new URL(Constantes.GET+"/proyecto1/obtener_usuario_por_id.php?email="+params[0]+"&pass="+params[1]);
+                HttpURLConnection connection = (HttpURLConnection) url.openConnection(); //Abrir la conexión
+                connection.setRequestProperty("User-Agent", "Mozilla/5.0" +
+                        " (Linux; Android 1.5; es-ES) Ejemplo HTTP");
+                int respuesta = connection.getResponseCode();
+                StringBuilder result = new StringBuilder();
+                if (respuesta == HttpURLConnection.HTTP_OK){
+                    InputStream in = new BufferedInputStream(connection.getInputStream());  // preparo la cadena de entrada
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(in));  // la introduzco en un BufferedReader
+                    String line;
+                    while ((line = reader.readLine()) != null) {
+                        result.append(line);        // Paso toda la entrada al StringBuilder
+                    }
+                    JSONObject respuestaJSON = new JSONObject(result.toString());   //Creo un JSONObject a partir del StringBuilder pasado a cadena
+                    String email= respuestaJSON.getString("estado");
+                    if (email.equals("1")){
+                        Intent intento = new Intent(getApplicationContext(), Actividad_Elegir_test.class);
+                        startActivity(intento);
+                    }else{
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Mensaje("Usuario no encontrado.");
+                            }
+                        });
+                    }
+                }else{
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            Mensaje("Ha ocurrido un error con la conexión al servidor.");
+                        }
+                    });
+                }
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            return devuelve;
+        }
+
+        @Override
+        protected void onPostExecute(String aVoid) {
+            //  resultado.setText(aVoid);
+        }
+
+        @Override
+        protected void onPreExecute() {
+            //  resultado.setText("");
+            super.onPreExecute();
+        }
+
+        @Override
+        protected void onProgressUpdate(Integer... values) {
+            super.onProgressUpdate(values);
+        }
+    }
+
 }

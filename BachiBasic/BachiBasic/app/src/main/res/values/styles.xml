@@ -2,6 +2,10 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-    </style>
+        <item name="colorPrimary">@color/primary</item>
+        <!--   <item name="colorPrimaryDark">@color/colorNormalMini</item>-->
+         <item name="colorAccent">@color/accent</item>
 
-</resources>
+     </style>
+
+ </resources>

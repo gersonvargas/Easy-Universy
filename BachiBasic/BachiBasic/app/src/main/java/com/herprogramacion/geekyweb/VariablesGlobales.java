@@ -4,6 +4,8 @@ import android.database.Cursor;
 import android.support.v7.app.ActionBarActivity;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 /**
  * Created by Guaria on 5/20/2016.
  */
@@ -17,6 +19,8 @@ public class VariablesGlobales {
     private String sessionpass;
     private int tipoTest;
     private byte[] imagen;
+    private ArrayList<Pregunta> preguntas;
+
 
     protected VariablesGlobales() {
         this.correctas=0;
@@ -26,6 +30,7 @@ public class VariablesGlobales {
         this.sessionpass="";
         imagen=null;
         tipoTest=0;
+        preguntas=new ArrayList<>();
     }
     public static VariablesGlobales getInstance() {
         if(instance == null) {
@@ -35,6 +40,13 @@ public class VariablesGlobales {
     }
     //Colocar en la clase Base
 
+    public ArrayList<Pregunta> getPreguntas() {
+        return preguntas;
+    }
+
+    public void setPreguntas(ArrayList<Pregunta> preguntas) {
+        this.preguntas = preguntas;
+    }
 
     public byte[] getImagen() {
         return imagen;

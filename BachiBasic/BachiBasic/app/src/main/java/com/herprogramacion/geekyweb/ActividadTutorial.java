@@ -26,11 +26,7 @@ import java.util.List;
 public class ActividadTutorial extends Base
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
-    /**
-     * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
-     */
     private NavigationDrawerFragment mNavigationDrawerFragment;
-
 
     private CharSequence mTitle;
 
@@ -92,23 +88,13 @@ public class ActividadTutorial extends Base
         actionBar.setTitle(mTitle);
     }
 
-    /**
-     * A placeholder fragment containing a simple view.
-     */
     public static class PlaceholderFragment extends Fragment {
-        /**
-         * The fragment argument representing the section number for this
-         * fragment.
-         */
+
         private static final String ARG_SECTION_NUMBER = "section_number";
 
         public PlaceholderFragment() {
         }
 
-        /**
-         * Returns a new instance of this fragment for the given section
-         * number.
-         */
         public static PlaceholderFragment newInstance(int sectionNumber) {
             PlaceholderFragment fragment = new PlaceholderFragment();
             Bundle args = new Bundle();
@@ -134,12 +120,11 @@ public class ActividadTutorial extends Base
     private List<Video> myCars = new ArrayList<Video>();
 
     private void populateCarList() {
-        myCars.add(new Video("Estudios Sociales", "https://www.youtube.com/watch?v=N_ZbTG7AYGU&list=PLERIktx0fWx5--ts3vSfpPjj2QM8XCVN9",R.drawable.tierra));
-        myCars.add(new Video("Matemáticas",  "https://www.youtube.com/watch?v=KKzFzR0qFOo",R.drawable.mate));
-        myCars.add(new Video("Educación Cívica",  "https://www.youtube.com/watch?v=5QURzx5m-hI&list=PLHSMBZFwrC9Z35uAnsX4OHGcDGrZVoshG",R.drawable.civica));
-        myCars.add(new Video("Biología",  "https://www.youtube.com/watch?v=n8lxbZCE8t4&list=PLHSMBZFwrC9ZiP5mIexUTtKxqSfi1JjCd",R.drawable.biologia));
-        myCars.add(new Video("Español",  "https://www.youtube.com/watch?v=bGxhZfvAbLw&list=PL5WRVdz1U50UUvLTZaNcTwnnrjINx3iRK",R.drawable.espanol));
-        myCars.add(new Video("Inglés",  "https://www.youtube.com/watch?v=dkgjfI_ezkc",R.drawable.ingles));
+        myCars.add(new Video("Lógica matemática", "https://www.youtube.com/watch?v=EwHzJWTcP7o",R.drawable.youtube));
+        myCars.add(new Video("Razonamiento lógico",  "https://www.youtube.com/watch?v=xN6rg5OrhrI",R.drawable.mate));
+        myCars.add(new Video("Razonamiento Verbal",  "https://www.youtube.com/watch?v=pjcpNkQsDf4",R.drawable.espanol));
+        myCars.add(new Video("Sucesiones numéricas",  "https://www.youtube.com/watch?v=8CxjlyKMB4w",R.drawable.mate));
+        myCars.add(new Video("Razonamieto lógico verbal",  "https://www.youtube.com/watch?v=YoZ3FBXhz6E",R.drawable.espanol));
     }
 
     private void populateListView() {

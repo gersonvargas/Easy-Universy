@@ -21,14 +21,13 @@ public class ArticleFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_article, container, false);
         int i = getArguments().getInt(ARG_ARTICLES_NUMBER);
-        String article = getResources().getStringArray(R.array.Tags)[i];
+        String article= getResources().getStringArray(R.array.Tags)[i];
 
-        getActivity().setTitle(article);
+            getActivity().setTitle(article);
         TextView headline = (TextView) rootView.findViewById(R.id.headline);
         headline.setBackgroundColor(Color.TRANSPARENT);
         headline.setTextColor(Color.BLUE);
       //  headline.append("\n" + article.toLowerCase());
-
         return rootView;
     }
 }

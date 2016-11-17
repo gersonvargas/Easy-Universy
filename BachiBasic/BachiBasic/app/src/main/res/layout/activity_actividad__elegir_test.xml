@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/libro"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -26,8 +27,6 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/imageViewbachi">
 
-
-
     </ScrollView>
 
     <ImageButton
@@ -36,7 +35,9 @@
         android:id="@+id/imageButton"
         android:src="@drawable/ejemplos"
         android:layout_alignTop="@+id/scrollView3"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:background="#36b2e7"
+        android:layout_marginTop="20dp" />
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -44,30 +45,48 @@
         android:src="@drawable/hojarespuestas"
         android:layout_below="@+id/imageButton"
         android:layout_alignLeft="@+id/imageButton"
-        android:layout_alignStart="@+id/imageButton" />
+        android:layout_alignStart="@+id/imageButton"
+
+        android:background="#bb2646"
+        android:layout_marginTop="20dp" />
+
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton3"
-        android:src="@drawable/matematicas"
+        android:id="@+id/imageButton4"
+        android:src="@drawable/respuestas"
+        android:background="#bb2646"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/imageButton2"
         android:layout_alignLeft="@+id/imageButton2"
         android:layout_alignStart="@+id/imageButton2" />
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton4"
-        android:src="@drawable/respuestas"
-        android:layout_below="@+id/imageButton3"
-        android:layout_alignLeft="@+id/imageButton3"
-        android:layout_alignStart="@+id/imageButton3" />
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/imageButton5"
         android:src="@drawable/ejercicios"
+
+        android:background="#36b2e7"
         android:layout_below="@+id/imageButton4"
         android:layout_alignLeft="@+id/imageButton4"
-        android:layout_alignStart="@+id/imageButton4" />
+        android:layout_alignStart="@+id/imageButton4"
+        android:layout_marginTop="20dp" />
 
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imagenucr"
+
+        android:src="@drawable/una"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imageButton5"
+        android:layout_alignStart="@+id/imageButton5" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imagenuna"
+        android:src="@drawable/ucr"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageButton5"
+        android:layout_alignEnd="@+id/imageButton5" />
 </RelativeLayout>

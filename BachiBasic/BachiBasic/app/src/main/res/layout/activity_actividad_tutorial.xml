@@ -34,10 +34,31 @@
             android:layout_gravity="left|top" />
 
         <ListView
-            android:layout_width="wrap_content"
-            android:layout_height="451dp"
+            android:layout_width="254dp"
+            android:layout_height="359dp"
             android:id="@+id/cars_listView"
             android:layout_gravity="center" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imagenuna"
+            android:src="@drawable/ucr"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/imageButton5"
+            android:layout_alignEnd="@+id/imageButton5"
+            android:layout_gravity="right|bottom" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imagenucr"
+
+            android:src="@drawable/una"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/imageButton5"
+            android:layout_alignStart="@+id/imageButton5"
+            android:layout_gravity="left|bottom" />
     </FrameLayout>
 
 
@@ -51,5 +72,4 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         tools:layout="@layout/drawer_actividad_tutorial" />
-
 </android.support.v4.widget.DrawerLayout>

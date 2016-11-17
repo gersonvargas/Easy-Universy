@@ -132,6 +132,20 @@
             </TableRow>
             <TableRow>
                 <TextView
+                    android:text="F. Nacimiento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1" />
+                <TextView
+                    android:id="@+id/fecha_ejemplo_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fecha_text"
+                    android:text="2015/05/17"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </TableRow>
+            <TableRow>
+                <TextView
                     android:text="Contraseña"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

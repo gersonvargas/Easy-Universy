@@ -1,10 +1,37 @@
 <resources>
-    <string name="app_name">Easy-Universy</string>
+    <string name="app_name">Easy-University</string>
+    <!-- Action Buttons -->
+    <string name="action_delete">Borrar</string>
+    <string name="action_discard">Descartar</string>
+    <string name="action_edit">Editar</string>
+    <string name="action_done">Guardar</string>
 
+
+    <!-- Categorías -->
+    <string-array name="entradas_categoria">
+        <item>Salud</item>
+        <item>Finanzas</item>
+        <item>Espiritual</item>
+        <item>Profesional</item>
+        <item>Material</item>
+    </string-array>
+
+    <!-- Prioridades -->
+    <string-array name="entradas_prioridad">
+        <item>Alta</item>
+        <item>Media</item>
+        <item>Baja</item>
+    </string-array>
+
+    <!-- Diálogos -->
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_discard_msg">¿Descartar Cambios?</string>
+    <string name="dialog_cancel">Cancelar</string>
+    <string name="dialog_delete_msg">Se eliminará la meta</string>
     <string-array name="Tags">
-        <item>Easy-Universy</item>
+        <item>Easy-University</item>
         <item>Tutoriales</item>
-        <item>Iniciar cuestionario</item>
+        <item>Práctica PAA</item>
         <item>Registrarse</item>
         <item>Perfil</item>
         <item>prueba</item>
@@ -14,7 +41,7 @@
     <string name="drawer_close">Cerrar navigation drawer</string>
     <string name="headlines">Sabías que?</string>
     <string name="title_activity_actividad_login">Login</string>
-    <string name="title_activity_actividad_preguntas">Cuestionario</string>
+    <string name="title_activity_actividad_preguntas">Práctica</string>
     <string name="title_activity_actividad_registrar">Registrarse</string>
     <string name="title_activity_actividad_tutorial">Tutorial</string>
     <string name="title_activity_actividad_usuario">Perfil</string>
@@ -29,4 +56,13 @@
     <string name="title_activity_actividad_tutorial2">Tutorial</string>
     <string name="title_activity_actividad_resultado">Resultado del test</string>
     <string name="title_activity_actividad__elegir_test">P.A.A</string>
+    <string name="title_activity_actividadhojarespuestas">Hoja de Respuestas</string>
+    <string name="title_activity_insert">InsertActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_insert_fragment">InsertFragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_actividad_respuestas">Respuestas</string>
+    <string name="title_activity_actividad_ejemplos">Ejemplos</string>
 </resources>
